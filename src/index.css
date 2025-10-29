@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    --primary: 184 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 184 75% 60%;
+
+    --secondary: 270 60% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 340 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 184 85% 45%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(184, 85%, 45%), hsl(184, 75%, 60%));
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(210, 20%, 98%));
+    --shadow-soft: 0 4px 20px -2px hsl(184 85% 45% / 0.1);
+    --shadow-medium: 0 8px 30px -4px hsl(184 85% 45% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 20% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 184 75% 55%;
+    --primary-foreground: 210 20% 10%;
+
+    --secondary: 270 50% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 15% 20%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 340 75% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 184 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
