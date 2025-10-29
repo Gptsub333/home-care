@@ -48,7 +48,7 @@ const About = () => {
                   <Icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-md md:text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-                <p className="text-sm md:text-md text-muted-foreground">{feature.description}</p>
+                <p className=" text-sm md:text-md text-muted-foreground">{feature.description}</p>
               </div>
             );
           })}
@@ -59,29 +59,29 @@ const About = () => {
             <div>
               <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-4">Why Choose Us?</h3>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3">
+                <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary-foreground text-sm">✓</span>
                   </div>
-                  <span className="text-foreground text-[13px] md:text-[15px]">Licensed and experienced medical professionals</span>
+                  <span className="text-[13px] md:text-[15px] text-foreground">Licensed and experienced medical professionals</span>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary-foreground text-sm">✓</span>
                   </div>
-                  <span className="text-foreground text-[13px] md:text-[15px]">Transparent pricing with no hidden charges</span>
+                  <span className="text-[13px] md:text-[15px] text-foreground">Transparent pricing with no hidden charges</span>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary-foreground text-sm">✓</span>
                   </div>
-                  <span className="text-foreground text-[13px] md:text-[15px]">Easy online booking and scheduling</span>
+                  <span className="text-[13px] md:text-[15px] text-foreground">Easy online booking and scheduling</span>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary-foreground text-sm">✓</span>
                   </div>
-                  <span className="text-foreground text-[13px] md:text-[15px]">Comprehensive follow-up care</span>
+                  <span className="text-[13px] md:text-[15px] text-foreground">Comprehensive follow-up care</span>
                 </li>
               </ul>
             </div>

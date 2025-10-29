@@ -19,10 +19,10 @@ const DoctorDetail = ({ doctor, onClose, onOpenChat }: DoctorDetailProps) => {
           <div className="relative bg-gradient-to-r from-primary to-primary-glow p-8 text-primary-foreground">
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 p-2 rounded-full bg-background/20 hover:bg-background/30 transition-colors text-black"
+              className="absolute top-4 right-4 p-2 rounded-full bg-white/90 hover:bg-white shadow-lg transition-all hover:scale-110 z-10"
               aria-label="Close"
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6 text-primary" />
             </button>
 
             <div className="flex items-start gap-6">
@@ -107,7 +107,7 @@ const DoctorDetail = ({ doctor, onClose, onOpenChat }: DoctorDetailProps) => {
             <div className="flex gap-3 flex-col sm:flex-row">
               <Button
                 onClick={() => onOpenChat(doctor)}
-                variant="hero"
+                variant="default"
                 size="lg"
                 className="flex-1"
               >

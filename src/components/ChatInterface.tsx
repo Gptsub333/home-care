@@ -86,10 +86,10 @@ const ChatInterface = ({ doctor, onClose }: ChatInterfaceProps) => {
             </div>
             <button
               onClick={onClose}
-              className="p-2 rounded-full hover:bg-background/20 transition-colors text-black"
+              className="p-2 rounded-full bg-white/90 hover:bg-white shadow-lg transition-all hover:scale-110"
               aria-label="Close chat"
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6 text-primary" />
             </button>
           </div>
         </CardHeader>

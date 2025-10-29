@@ -26,7 +26,7 @@ const DoctorCard = ({ doctor, onViewProfile }: DoctorCardProps) => {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in border-2 hover:border-primary/50">
       <CardContent className="p-6">
-        <div className="flex gap-4">
+        <div className="block md:flex gap-4">
           {/* Doctor Image */}
           <div className="w-20 h-20 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary-glow flex-shrink-0">
             <img

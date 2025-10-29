@@ -74,7 +74,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <Button type="submit" variant="hero" size="lg" className="w-full">
+                <Button type="submit" variant="default" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>

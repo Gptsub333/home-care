@@ -28,10 +28,10 @@ const DoctorList = ({ doctors, searchQuery, onViewProfile }: DoctorListProps) =>
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-foreground mb-2">
+          <h2 className="text-xl font-bold text-foreground mb-2">
             {searchQuery ? `Results for "${searchQuery}"` : "Available Doctors"}
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-md">
             {doctors.length} doctor{doctors.length !== 1 ? "s" : ""} available
           </p>
         </div>
